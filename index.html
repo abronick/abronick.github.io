@@ -3,66 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exhalo</title>
+  <title>Exhalo – Health & Utility Apps</title>
   <style>
-    body {
-      font-family: sans-serif;
+    :root {
+      --accent: #7f5af0;
+      --bg: #fdfdfd;
+      --text: #1f1f1f;
+      --muted: #777;
+      --card: #ffffff;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+      color: var(--text);
+      line-height: 1.6;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
       min-height: 100vh;
+      padding: 2rem 1.5rem;
     }
-    header {
-      padding: 4rem 2rem 1rem;
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
     }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.4rem;
       margin-bottom: 0.5rem;
+      color: var(--accent);
     }
-    p {
-      font-size: 1rem;
-      max-width: 500px;
-      margin: 0 auto 2rem;
+
+    p.tagline {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
     }
-    footer {
-      font-size: 0.9rem;
-      padding: 2rem;
-      color: #666;
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
     }
+
     .links a {
-      display: inline-block;
-      margin: 0.5rem 1rem;
       text-decoration: none;
-      color: #007BFF;
+      color: var(--accent);
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
     }
+
+    .links a:hover {
+      border-bottom: 2px solid var(--accent);
+    }
+
     .info {
-      margin-top: 2rem;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .info p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .info a {
+      color: var(--text);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: auto;
+      padding-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Exhalo</h1>
-    <p>We craft health and utility apps that help people feel better, live better, and do more.</p>
-  </header>
+    <p class="tagline">Health & Utility apps to help you live, breathe, and perform better.</p>
 
-  <div class="links">
-    <a href="https://docs.google.com/document/d/1KEommOPIuKEgr39zX0f7U8u88o1AsPKVD00BLAgxOJU/edit?tab=t.0" target="_blank">Privacy Policy</a>
-    <a href="https://docs.google.com/document/d/1_PYKze6j01bd1qpJc05WTTdSo9ItCOZHYTi-gajZTI4/edit?tab=t.0" target="_blank">EULA</a>
+    <div class="links">
+      <a href="https://docs.google.com/document/d/1KEommOPIuKEgr39zX0f7U8u88o1AsPKVD00BLAgxOJU/edit?tab=t.0" target="_blank">Privacy Policy</a>
+      <a href="https://docs.google.com/document/d/1_PYKze6j01bd1qpJc05WTTdSo9ItCOZHYTi-gajZTI4/edit?tab=t.0" target="_blank">EULA</a>
+    </div>
+
+    <div class="info">
+      <p>📧 <a href="mailto:support@exhalo.app">support@exhalo.app</a></p>
+      <p>🏢 2810 N Church St PMB 99728<br />Wilmington, DE, 19802 US</p>
+    </div>
   </div>
 
-  <div class="info">
-    <p>📧 <a href="mailto:support@exhalo.app">support@exhalo.app</a></p>
-    <p>🏢 2810 N Church St PMB 99728<br/>Wilmington, DE, 19802 US</p>
-  </div>
-
-  <footer>
-    &copy; 2025 Exhalo. All rights reserved.
-  </footer>
+  <footer>&copy; 2025 Exhalo. All rights reserved.</footer>
 </body>
 </html>
